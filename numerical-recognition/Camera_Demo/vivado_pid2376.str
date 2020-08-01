@@ -1,0 +1,974 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 2376
+License: Customer
+
+Current time: 	Fri Jul 31 09:08:48 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 55 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	E:/xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	E:/xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	ASUS
+User home directory: C:/Users/ASUS
+User working directory: D:/summer/demo/Camera_Demo/Camera_Demo
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: E:/xilinx/Vivado
+HDI_APPROOT: E:/xilinx/Vivado/2018.2
+RDI_DATADIR: E:/xilinx/Vivado/2018.2/data
+RDI_BINDIR: E:/xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	E:/xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/summer/demo/Camera_Demo/Camera_Demo/vivado.log
+Vivado journal file location: 	D:/summer/demo/Camera_Demo/Camera_Demo/vivado.jou
+Engine tmp dir: 	D:/summer/demo/Camera_Demo/Camera_Demo/.Xil/Vivado-2376-DESKTOP-GKRBQNH
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: E:/xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_FOR_ALTIUM_OVERRIDE:  
+XILINX_PLANAHEAD: E:/xilinx/Vivado/2018.2
+XILINX_SDK: E:/xilinx/SDK/2018.2
+XILINX_VIVADO: E:/xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: E:/xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	139 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 306 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 36 MB (+35530kb) [00:00:18]
+// [Engine Memory]: 272 MB (+133315kb) [00:00:18]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 61 MB (+23923kb) [00:00:31]
+// [Engine Memory]: 306 MB (+21537kb) [00:00:31]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: D:\summer\demo\Camera_Demo\Camera_Demo\Camera_Demo.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 318 MB. GUI used memory: 33 MB. Current time: 7/31/20 9:08:50 AM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 363 MB (+43712kb) [00:00:39]
+// [Engine Memory]: 386 MB (+5158kb) [00:00:44]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 409 MB (+4567kb) [00:01:10]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1673 ms. Increasing delay to 3000 ms.
+// [GUI Memory]: 65 MB (+1069kb) [00:01:21]
+// Tcl Message: open_project D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/summer/demo/IP'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/summer/Frequency_Divider_Demo/Frequency_Divider_Demo.srcs'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 437 MB. GUI used memory: 44 MB. Current time: 7/31/20 9:09:40 AM CST
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1303ms to process. Increasing delay to 3000 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 782.480 ; gain = 139.535 
+// Project name: Camera_Demo; location: D:/summer/demo/Camera_Demo/Camera_Demo; part: xc7s15ftgb196-1
+// [Engine Memory]: 453 MB (+23777kb) [00:01:30]
+dismissDialog("Open Project"); // bx (ck)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 661ms to process. Increasing delay to 4000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 70 MB (+1736kb) [00:03:47]
+// [GUI Memory]: 73 MB (+13kb) [00:05:32]
+// [GUI Memory]: 79 MB (+1444kb) [00:09:42]
+// [GUI Memory]: 83 MB (+322kb) [00:12:08]
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2288 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2555 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2578 ms. Increasing delay to 5000 ms.
+// [GUI Memory]: 88 MB (+1064kb) [00:20:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 44 MB. Current time: 7/31/20 9:39:41 AM CST
+// [GUI Memory]: 93 MB (+875kb) [00:37:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 43 MB. Current time: 7/31/20 10:19:32 AM CST
+// RDIResource.RDIViews_PROPERTIES: Properties: close view
+// Elapsed time: 4254 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1); // B (D, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1962 ms. Increasing delay to 4000 ms.
+// PAPropertyPanels.initPanels (rgb2gray.v) elapsed time: 0.8s
+// Elapsed time: 88 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), rgb2gray0 : rgb2gray (rgb2gray.v)]", 15, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), rgb2gray0 : rgb2gray (rgb2gray.v)]", 15, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), rgb2gray0 : rgb2gray (rgb2gray.v)]", 15, false); // B (D, ck)
+selectCodeEditor("rgb2gray.v", 312, 134); // ce (w, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // J
+// Elapsed time: 11 seconds
+selectCodeEditor("rgb2gray.v", 195, 367); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), judge : shape_recognition (shape_recognized.v)]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), judge : shape_recognition (shape_recognized.v)]", 9, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("shape_recognized.v", 567, 349); // ce (w, ck)
+selectCodeEditor("shape_recognized.v", 530, 320); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb2gray.v", 0); // k (j, ck)
+// Elapsed time: 51 seconds
+selectCodeEditor("rgb2gray.v", 225, 369); // ce (w, ck)
+selectCodeEditor("rgb2gray.v", 271, 367); // ce (w, ck)
+selectCodeEditor("rgb2gray.v", 232, 365); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), number : digital_recognition (digital_recognition.v)]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), number : digital_recognition (digital_recognition.v)]", 11, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shape_recognized.v", 1); // k (j, ck)
+// Elapsed time: 43 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digital_recognition.v", 2); // k (j, ck)
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shape_recognized.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digital_recognition.v", 2); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb2gray.v", 0); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("Camera_Demo.v", 138, 354); // ce (w, ck)
+selectCodeEditor("Camera_Demo.v", 89, 360); // ce (w, ck)
+selectCodeEditor("Camera_Demo.v", 108, 367); // ce (w, ck)
+selectCodeEditor("Camera_Demo.v", 139, 349); // ce (w, ck)
+selectCodeEditor("Camera_Demo.v", 114, 352, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Video_Generator0 : Video_Generator (Video_Generator.v)]", 8, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Video_Generator0 : Video_Generator (Video_Generator.v)]", 8, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("Video_Generator.v", 150, 254); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 102, 270, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("Video_Generator.v", 386, 229); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 440, 203); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Video_Generator.v", 197, 120); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 80, 123); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 182, 123, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("Video_Generator.v", 158, 127); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 209, 121); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 193, 139, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 79, 121); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 134, 127, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 80, 139); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 80, 139, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 224, 142); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 188, 311); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 309, 341); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 302, 349); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 137, 337, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 150, 278); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 5, 179); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 5, 179, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 197, 178); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 163, 178); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 219, 257); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 112, 251, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 305, 194); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 140, 193, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 97, 181); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 147, 200); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("Video_Generator.v", 248, 242); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 240, 196); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 174, 198, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 9317 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8146 ms. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2636 ms. Increasing delay to 6000 ms.
+// Elapsed time: 88 seconds
+selectCodeEditor("Video_Generator.v", 335, 216); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 157, 234); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 170, 273); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 230, 313); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 168, 238); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 106, 236); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 139, 238, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 168, 236); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 168, 236, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 207, 235); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 222, 256); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 366 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shape_recognized.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb2gray.v", 0); // k (j, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("rgb2gray.v", 191, 372); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Video_Generator0 : Video_Generator (Video_Generator.v), color_show : colorshow (colorshow.v)]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Video_Generator0 : Video_Generator (Video_Generator.v), color_show : colorshow (colorshow.v), green1 : green (lv.v)]", 15, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("colorshow.v", 66, 332); // ce (w, ck)
+selectCodeEditor("colorshow.v", 136, 97); // ce (w, ck)
+selectCodeEditor("colorshow.v", 136, 139); // ce (w, ck)
+selectCodeEditor("colorshow.v", 136, 157); // ce (w, ck)
+selectCodeEditor("colorshow.v", 135, 196); // ce (w, ck)
+selectCodeEditor("colorshow.v", 134, 238); // ce (w, ck)
+selectCodeEditor("colorshow.v", 132, 273); // ce (w, ck)
+selectCodeEditor("colorshow.v", 138, 255); // ce (w, ck)
+selectCodeEditor("colorshow.v", 135, 294); // ce (w, ck)
+selectCodeEditor("colorshow.v", 132, 332); // ce (w, ck)
+selectCodeEditor("colorshow.v", 142, 374); // ce (w, ck)
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Camera_Demo.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shape_recognized.v", 1); // k (j, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Video_Generator0 : Video_Generator (Video_Generator.v), color_show : colorshow (colorshow.v)]", 11); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), col : colour_recognition (colour_recognition.v)]", 17, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), col : colour_recognition (colour_recognition.v)]", 17, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("colour_recognition.v", 394, 306); // ce (w, ck)
+selectCodeEditor("colour_recognition.v", 394, 293); // ce (w, ck)
+selectCodeEditor("colour_recognition.v", 394, 293); // ce (w, ck)
+selectCodeEditor("colour_recognition.v", 277, 293); // ce (w, ck)
+selectCodeEditor("colour_recognition.v", 276, 314); // ce (w, ck)
+// [GUI Memory]: 98 MB (+0kb) [01:33:02]
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 50 MB. Current time: 7/31/20 10:49:31 AM CST
+// Elapsed time: 937 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Run Synthesis"); // A (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Camera_Demo.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shape_recognized.v", 1); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (ck):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 10:55:57 2020] Launched synth_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 14 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// WARNING: HTimer (StateMonitor Timer) is taking 2634ms to process. Increasing delay to 4000 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1132ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 2023ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// [GUI Memory]: 104 MB (+874kb) [01:52:43]
+// Elapsed time: 332 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 11:01:34 2020] Launched impl_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "colour_recognition.v", 4); // k (j, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 432ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 2089ms to process. Increasing delay to 4000 ms.
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 590 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ah (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 11:11:31 2020] Launched impl_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 918ms to process. Increasing delay to 5000 ms.
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 301 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 49 MB. Current time: 7/31/20 11:19:29 AM CST
+// Elapsed time: 225 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), number : digital_recognition (digital_recognition.v)]", 15, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), number : digital_recognition (digital_recognition.v)]", 15, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// Elapsed time: 945 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Camera_Demo.v", 2); // k (j, ck)
+selectCodeEditor("Camera_Demo.v", 52, 166); // ce (w, ck)
+selectCodeEditor("Camera_Demo.v", 148, 157, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Camera_Demo.v", 205, 235); // ce (w, ck)
+selectCodeEditor("Camera_Demo.v", 138, 258, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 3); // k (j, ck)
+selectCodeEditor("Video_Generator.v", 115, 140); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 75, 147, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Camera_Demo.v", 2); // k (j, ck)
+selectCodeEditor("Camera_Demo.v", 145, 253); // ce (w, ck)
+selectCodeEditor("Camera_Demo.v", 100, 258, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Camera_Demo.v", 415, 210); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Camera_Demo.v", 2); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (ck):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 11:36:55 2020] Launched synth_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1075ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 323 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 11:42:21 2020] Launched impl_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 299 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectCodeEditor("Camera_Demo.v", 359, 245); // ce (w, ck)
+dismissDialog("Implementation Completed"); // ah (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 11:47:23 2020] Launched impl_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 49 MB. Current time: 7/31/20 11:49:30 AM CST
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1133ms to process. Increasing delay to 6000 ms.
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 183 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 49 MB. Current time: 7/31/20 12:19:32 PM CST
+// Elapsed time: 3054 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 3); // k (j, ck)
+selectCodeEditor("Video_Generator.v", 45, 121); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 376, 194, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+// Elapsed time: 389 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("Video_Generator.v", 699, 217); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 223, 291); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 221, 294); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 219, 287); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("Video_Generator.v", 137, 252); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 65, 205, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 129, 253); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 62, 273); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 56, 272); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 56, 272, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, ck)
+selectCodeEditor("Video_Generator.v", 2, 275); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 2, 275, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digital_recognition.v", 5); // k (j, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("digital_recognition.v", 153, 101); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 49 MB. Current time: 7/31/20 12:49:30 PM CST
+selectCodeEditor("digital_recognition.v", 154, 214); // ce (w, ck)
+selectCodeEditor("digital_recognition.v", 155, 197); // ce (w, ck)
+selectCodeEditor("digital_recognition.v", 138, 197, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shape_recognized.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 3); // k (j, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("Video_Generator.v", 140, 274); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 284, 271); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 144, 274); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 174, 273); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 169, 273); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 614, 280); // ce (w, ck)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digital_recognition.v", 5); // k (j, ck)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb2gray.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shape_recognized.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 3); // k (j, ck)
+selectCodeEditor("Video_Generator.v", 279, 273); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 236, 65); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 433, 66); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 289, 62, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 196, 275); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 365, 275, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 288, 270); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 365, 271); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("Video_Generator.v", 194, 273); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 556, 277); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 198, 273); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 341, 272, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 564, 273); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 369, 279, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 546, 273); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Video_Generator.v", 383, 272); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("Video_Generator.v", 216, 275); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("Video_Generator.v", 494, 274); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 413, 276); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("Video_Generator.v", 238, 314); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 167, 335); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 133, 275, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+// Elapsed time: 16 seconds
+selectCodeEditor("Video_Generator.v", 179, 220); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 163, 215); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 8, 230); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 8, 230, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 156, 232); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 349, 238); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 353, 238, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 180, 236); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 180, 236, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 181, 235); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 143, 238, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 190, 236); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 190, 236, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digital_recognition.v", 5); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shape_recognized.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digital_recognition.v", 5); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shape_recognized.v", 1); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 2); // k (j, ck)
+selectCodeEditor("Video_Generator.v", 179, 236); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 250, 235); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 314, 234); // ce (w, ck)
+// Elapsed time: 45 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digital_recognition.v", 4); // k (j, ck)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Camera_Demo.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digital_recognition.v", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 2); // k (j, ck)
+selectCodeEditor("Video_Generator.v", 333, 290); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 337, 290); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("Video_Generator.v", 414, 294); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("Video_Generator.v", 569, 293); // ce (w, ck)
+// Elapsed time: 170 seconds
+selectCodeEditor("Video_Generator.v", 493, 294); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 297, 349); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 223, 317); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 272, 350); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 235, 261, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+// Elapsed time: 10 seconds
+selectCodeEditor("Video_Generator.v", 116, 145); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("Video_Generator.v", 145, 157); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 14, 160, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("Video_Generator.v", 79, 159); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("Video_Generator.v", 294, 292); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("Video_Generator.v", 85, 182); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 71, 194); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 58, 218); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 83, 236); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 279, 242); // ce (w, ck)
+// Elapsed time: 56 seconds
+selectCodeEditor("Video_Generator.v", 160, 142); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 213, 124); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 114, 128); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 189, 144); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 306, 197); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 280, 163); // ce (w, ck)
+selectCodeEditor("Video_Generator.v", 239, 161); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (ck):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 13:03:06 2020] Launched synth_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1017ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 183 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 13:06:12 2020] Launched impl_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6880 ms. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7948 ms. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 13136 ms. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 11048 ms. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4650 ms. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5027 ms. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5536 ms. Increasing delay to 10000 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 466ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1386ms to process. Increasing delay to 7000 ms.
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 321 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ah (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 13:11:37 2020] Launched impl_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 275 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 50 MB. Current time: 7/31/20 1:19:32 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 50 MB. Current time: 7/31/20 1:49:32 PM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5056 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5324 ms. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 50 MB. Current time: 7/31/20 2:48:10 PM CST
+// Elapsed time: 6857 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb2gray.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "colour_recognition.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digital_recognition.v", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 2); // k (j, ck)
+// Elapsed time: 125 seconds
+selectCodeEditor("Video_Generator.v", 734, 417); // ce (w, ck)
+// Elapsed time: 66 seconds
+selectCodeEditor("Video_Generator.v", 132, 138); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 50 MB. Current time: 7/31/20 3:17:57 PM CST
+// Elapsed time: 513 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "colour_recognition.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digital_recognition.v", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 2); // k (j, ck)
+// Elapsed time: 647 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digital_recognition.v", 4); // k (j, ck)
+// Elapsed time: 217 seconds
+selectCodeEditor("digital_recognition.v", 190, 293); // ce (w, ck)
+// Elapsed time: 355 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Camera_Demo.v", 1); // k (j, ck)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 2); // k (j, ck)
+// Elapsed time: 89 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digital_recognition.v", 4); // k (j, ck)
+// Elapsed time: 46 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 2); // k (j, ck)
+// Elapsed time: 42 seconds
+selectCodeEditor("Video_Generator.v", 275, 214); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("Video_Generator.v", 323, 175); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectCodeEditor("Video_Generator.v", 396, 199); // ce (w, ck)
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// aj (ck): Save Project: addNotify
+dismissDialog("Run Synthesis"); // A (ck)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 15:47:41 2020] Launched synth_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 10 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 49 MB. Current time: 7/31/20 3:47:57 PM CST
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1020ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 221 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digital_recognition.v", 4); // k (j, ck)
+selectCodeEditor("digital_recognition.v", 197, 122); // ce (w, ck)
+selectCodeEditor("digital_recognition.v", 270, 120); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 15:51:40 2020] Launched impl_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 219 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ah (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 15:55:23 2020] Launched impl_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// PAPropertyPanels.initPanels (digital_recognition.v) elapsed time: 0.2s
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 133 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// Elapsed time: 807 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Video_Generator0 : Video_Generator (Video_Generator.v)]", 8); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), judge : shape_recognition (shape_recognized.v)]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), judge : shape_recognition (shape_recognized.v)]", 9, false, false, false, false, false, true); // B (D, ck) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 49 MB. Current time: 7/31/20 4:17:57 PM CST
+// Elapsed time: 831 seconds
+selectCodeEditor("shape_recognized.v", 335, 65); // ce (w, ck)
+selectCodeEditor("shape_recognized.v", 331, 68); // ce (w, ck)
+selectCodeEditor("shape_recognized.v", 336, 66); // ce (w, ck)
+selectCodeEditor("shape_recognized.v", 332, 70); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("shape_recognized.v", 803, 84); // ce (w, ck)
+// Elapsed time: 156 seconds
+selectCodeEditor("shape_recognized.v", 735, 104); // ce (w, ck)
+selectCodeEditor("shape_recognized.v", 756, 101, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("shape_recognized.v", 336, 82); // ce (w, ck)
+selectCodeEditor("shape_recognized.v", 319, 82, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("shape_recognized.v", 629, 81); // ce (w, ck)
+selectCodeEditor("shape_recognized.v", 611, 81, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("shape_recognized.v", 804, 217); // ce (w, ck)
+// Elapsed time: 30 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// 'cv' command handler elapsed time: 12 seconds
+dismissDialog("Resetting Runs"); // bx (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 16:29:36 2020] Launched synth_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log [Fri Jul 31 16:29:36 2020] Launched impl_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 686ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 485 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 50 MB. Current time: 7/31/20 4:47:58 PM CST
+// Elapsed time: 768 seconds
+selectCodeEditor("shape_recognized.v", 492, 266); // ce (w, ck)
+// Elapsed time: 87 seconds
+selectCodeEditor("shape_recognized.v", 492, 266); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 49 MB. Current time: 7/31/20 5:17:58 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 50 MB. Current time: 7/31/20 5:47:59 PM CST
+// Elapsed time: 3367 seconds
+selectCodeEditor("shape_recognized.v", 613, 180); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb2gray.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shape_recognized.v", 5); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb2gray.v", 0); // k (j, ck)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Video_Generator0 : Video_Generator (Video_Generator.v)]", 8); // B (D, ck)
+// PAPropertyPanels.initPanels (shapeshow.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Video_Generator0 : Video_Generator (Video_Generator.v), shape_show : shapeshow (shapeshow.v)]", 12, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Camera_Demo (Camera_Demo.v), Video_Generator0 : Video_Generator (Video_Generator.v), shape_show : shapeshow (shapeshow.v)]", 12, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shape_recognized.v", 5); // k (j, ck)
+// Elapsed time: 18 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("shape_recognized.v", 773, 182); // ce (w, ck)
+// Elapsed time: 93 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("shape_recognized.v", 480, 287); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (ck):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 17:51:07 2020] Launched synth_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1071ms to process. Increasing delay to 2000 ms.
+// PAPropertyPanels.initPanels (shapeshow.v) elapsed time: 0.2s
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 205 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 17:54:37 2020] Launched impl_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 242 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ah (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 17:58:42 2020] Launched impl_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 253 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// Elapsed time: 509 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("shape_recognized.v", 918, 271); // ce (w, ck)
+selectCodeEditor("shape_recognized.v", 771, 105); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // bx (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jul 31 18:12:11 2020] Launched synth_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log [Fri Jul 31 18:12:11 2020] Launched impl_1... Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Camera_Demo.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Video_Generator.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rgb2gray.v", 0); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shape_recognized.v", 4); // k (j, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 821ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 50 MB. Current time: 7/31/20 6:18:00 PM CST
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 448 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 49 MB. Current time: 7/31/20 6:47:58 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 48 MB. Current time: 7/31/20 7:17:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 49 MB. Current time: 7/31/20 7:50:15 PM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 656829 ms. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 49 MB. Current time: 7/31/20 8:20:13 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 49 MB. Current time: 7/31/20 8:50:12 PM CST

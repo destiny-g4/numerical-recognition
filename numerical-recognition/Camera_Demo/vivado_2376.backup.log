@@ -1,0 +1,117 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jul 31 09:07:54 2020
+# Process ID: 2376
+# Current directory: D:/summer/demo/Camera_Demo/Camera_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4460 D:\summer\demo\Camera_Demo\Camera_Demo\Camera_Demo.xpr
+# Log file: D:/summer/demo/Camera_Demo/Camera_Demo/vivado.log
+# Journal file: D:/summer/demo/Camera_Demo/Camera_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/summer/demo/IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/summer/Frequency_Divider_Demo/Frequency_Divider_Demo.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 782.480 ; gain = 139.535
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 10:55:57 2020] Launched synth_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 11:01:34 2020] Launched impl_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 11:11:31 2020] Launched impl_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 11:36:55 2020] Launched synth_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 11:42:21 2020] Launched impl_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 11:47:23 2020] Launched impl_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 13:03:06 2020] Launched synth_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 13:06:12 2020] Launched impl_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 13:11:37 2020] Launched impl_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 15:47:41 2020] Launched synth_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 15:51:40 2020] Launched impl_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 15:55:23 2020] Launched impl_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 16:29:36 2020] Launched synth_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+[Fri Jul 31 16:29:36 2020] Launched impl_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 17:51:07 2020] Launched synth_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 17:54:37 2020] Launched impl_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 17:58:42 2020] Launched impl_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0.xci' is already up-to-date
+[Fri Jul 31 18:12:11 2020] Launched synth_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+[Fri Jul 31 18:12:11 2020] Launched impl_1...
+Run output will be captured here: D:/summer/demo/Camera_Demo/Camera_Demo/Camera_Demo.runs/impl_1/runme.log

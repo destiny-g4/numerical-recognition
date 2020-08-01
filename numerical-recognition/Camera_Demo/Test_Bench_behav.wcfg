@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Test_Bench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Test_Bench" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="3161618333333fs"></ZoomStartTime>
+      <ZoomEndTime time="6016618333334fs"></ZoomEndTime>
+      <Cursor1Time time="5540785000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="100"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/Test_Bench/test/Driver_IIC0/IIC_SDA_In" type="logic">
+      <obj_property name="ElementShortName">IIC_SDA_In</obj_property>
+      <obj_property name="ObjectShortName">IIC_SDA_In</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test_Bench/test/Driver_IIC0/IIC_SCL" type="logic">
+      <obj_property name="ElementShortName">IIC_SCL</obj_property>
+      <obj_property name="ObjectShortName">IIC_SCL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test_Bench/test/Driver_IIC0/SDA_Out" type="logic">
+      <obj_property name="ElementShortName">SDA_Out</obj_property>
+      <obj_property name="ObjectShortName">SDA_Out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test_Bench/test/Driver_IIC0/Data" type="array">
+      <obj_property name="ElementShortName">Data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test_Bench/test/Driver_IIC0/Addr" type="array">
+      <obj_property name="ElementShortName">Addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test_Bench/test/Driver_IIC0/n_state" type="array">
+      <obj_property name="ElementShortName">n_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">n_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test_Bench/test/Diver_OV5647_Init/Write_State" type="array">
+      <obj_property name="ElementShortName">Write_State[8:0]</obj_property>
+      <obj_property name="ObjectShortName">Write_State[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test_Bench/test/Driver_IIC0/Reg_Addr" type="array">
+      <obj_property name="ElementShortName">Reg_Addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Reg_Addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test_Bench/test/Driver_IIC0/reg_H_addr" type="array">
+      <obj_property name="ElementShortName">reg_H_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_H_addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test_Bench/test/Driver_IIC0/reg_addr" type="array">
+      <obj_property name="ElementShortName">reg_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Test_Bench/test/Driver_IIC0/scl_hc" type="logic">
+      <obj_property name="ElementShortName">scl_hc</obj_property>
+      <obj_property name="ObjectShortName">scl_hc</obj_property>
+   </wvobject>
+</wave_config>

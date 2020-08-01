@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jul 31 21:29:14 2020
+# Process ID: 24292
+# Current directory: D:/summer/demo/Camera_Demo 2/Camera_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11920 D:\summer\demo\Camera_Demo 2\Camera_Demo\Camera_Demo.xpr
+# Log file: D:/summer/demo/Camera_Demo 2/Camera_Demo/vivado.log
+# Journal file: D:/summer/demo/Camera_Demo 2/Camera_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.xpr}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/colorshow.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/colorshow.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/colorshow.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/numbershow.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/numbershow.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/numbershow.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/shapeshow.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/shapeshow.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/shapeshow.v}
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/yuan.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/yuan.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/yuan.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/yellow.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/yellow.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/yellow.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/bai.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/bai.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/bai.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/state.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/state.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/state.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/shape_recognized.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/shape_recognized.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/shape_recognized.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/san.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/san.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/san.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/rgb2hsv_top.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/rgb2hsv_top.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/rgb2hsv_top.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/HSV_To_RGB.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/HSV_To_RGB.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/HSV_To_RGB.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/black.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/black.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/black.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/lan.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/lan.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/lan.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/clkdivi.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/clkdivi.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/clkdivi.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/colour_recognition.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/colour_recognition.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/colour_recognition.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/qing.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/qing.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/qing.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/fang.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/fang.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/fang.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/lv.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/lv.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/lv.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/grey.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/grey.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/grey.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/ling.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/ling.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/ling.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/orange.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/orange.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/orange.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/purple.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/purple.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/purple.v}
+export_ip_user_files -of_objects  [get_files {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/red.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/red.v}}
+file delete -force {D:/summer/demo/Camera_Demo 2/Camera_Demo/Camera_Demo.srcs/sources_1/new/red.v}
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1

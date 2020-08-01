@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jul 26 14:55:08 2020" VIVADOVERSION="2018.2">
+
+  <SYSTEMINFO ARCH="spartan7" DEVICE="7s15" NAME="design_1" PACKAGE="ftgb196" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS/>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES/>
+
+</EDKSYSTEM>

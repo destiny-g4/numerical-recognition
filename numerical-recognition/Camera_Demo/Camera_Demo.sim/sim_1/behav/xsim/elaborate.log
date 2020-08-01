@@ -1,0 +1,22 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 0d1417ffc2df4b878d6a21873bebf008 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Test_Bench_behav xil_defaultlib.Test_Bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 3 for port TMDS_Tx_Data_N [D:/Demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sim_1/new/Test_Bench.v:50]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 3 for port TMDS_Tx_Data_P [D:/Demo/Camera_Demo/Camera_Demo/Camera_Demo.srcs/sim_1/new/Test_Bench.v:51]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.Driver_IIC
+Compiling module xil_defaultlib.Diver_OV5647
+Compiling module xil_defaultlib.Camera_Demo
+Compiling module xil_defaultlib.Test_Bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Test_Bench_behav

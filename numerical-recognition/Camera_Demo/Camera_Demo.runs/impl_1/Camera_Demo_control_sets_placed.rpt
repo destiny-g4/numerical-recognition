@@ -1,0 +1,109 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Aug  1 00:17:35 2020
+| Host         : SC-202004121038 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Camera_Demo_control_sets_placed.rpt
+| Design       : Camera_Demo
+| Device       : xc7s15
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    36 |
+| Unused register locations in slices containing registers |   119 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            4 |
+|      4 |            3 |
+|      5 |            4 |
+|      7 |            1 |
+|      8 |            4 |
+|     10 |            3 |
+|     11 |            2 |
+|     13 |            2 |
+|     15 |            1 |
+|    16+ |           12 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             376 |          118 |
+| No           | No                    | Yes                    |              21 |            9 |
+| No           | Yes                   | No                     |              77 |           30 |
+| Yes          | No                    | No                     |             151 |           46 |
+| Yes          | No                    | Yes                    |               1 |            1 |
+| Yes          | Yes                   | No                     |             119 |           38 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------------+-------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+|                    Clock Signal                   |                              Enable Signal                              |                                Set/Reset Signal                               | Slice Load Count | Bel Load Count |
++---------------------------------------------------+-------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+|  clk_10/inst/clk_out4                             |                                                                         |                                                                               |                1 |              1 |
+| ~Driver_IIC0/iicwr_req                            |                                                                         |                                                                               |                1 |              1 |
+|  clk_10/inst/clk_out1                             | Driver_IIC0/SDA_Out_i_1_n_0                                             | Diver_OV5647_Init/Enable_reg_0                                                |                1 |              1 |
+|  Driver_MIPI0/Data_Read/U0/clock_system_inst/pclk |                                                                         |                                                                               |                1 |              1 |
+|  Driver_MIPI0/clk_11/inst/clk_out1                |                                                                         | Driver_MIPI0/Driver_Csi_To_Dvp0/SR[0]                                         |                1 |              4 |
+|  clk_10/inst/clk_out4                             | Diver_OV5647_Init/Req_Cnt                                               | Diver_OV5647_Init/Req_Cnt[3]_i_1_n_0                                          |                1 |              4 |
+|  Driver_MIPI0/clk_11/inst/clk_out1                | Driver_MIPI0/Driver_Csi_To_Dvp0/vdata_reg[8]_0[0]                       | Driver_MIPI0/Driver_Csi_To_Dvp0/SR[0]                                         |                1 |              4 |
+|  clk_10/inst/clk_out2                             | Driver_MIPI0/Data_Read/U0/clock_system_inst/curr_delay                  |                                                                               |                2 |              5 |
+|  clk_10/inst/clk_out2                             | Driver_MIPI0/Data_Read/U0/clock_system_inst/start_dly_1                 |                                                                               |                1 |              5 |
+|  clk_10/inst/clk_out2                             | Driver_MIPI0/Data_Read/U0/clock_system_inst/end_dly_0                   |                                                                               |                1 |              5 |
+|  clk_10/inst/clk_out2                             | Driver_MIPI0/Data_Read/U0/clock_system_inst/sum_dly                     |                                                                               |                2 |              5 |
+| ~Driver_IIC0/iicwr_req                            | Diver_OV5647_Init/FSM_sequential_Write_State[6]_i_1_n_0                 |                                                                               |                2 |              7 |
+|  Driver_MIPI0/Data_Read/U0/clock_system_inst/CLK  | Driver_MIPI0/Data_To_Csi/U0/parser_inst/packet_size[15]                 |                                                                               |                1 |              8 |
+|  Driver_MIPI0/Data_Read/U0/clock_system_inst/CLK  | Driver_MIPI0/Data_To_Csi/U0/lane_align_inst/data_shift[1]_0             |                                                                               |                4 |              8 |
+|  Driver_MIPI0/Data_Read/U0/clock_system_inst/CLK  | Driver_MIPI0/Data_To_Csi/U0/lane_align_inst/to_cnt[0]_2                 | Driver_MIPI0/Data_To_Csi/U0/lane_align_inst/p_5_out[0]                        |                2 |              8 |
+|  Driver_MIPI0/Data_Read/U0/clock_system_inst/CLK  | Driver_MIPI0/Data_To_Csi/U0/lane_align_inst/to_cnt[1]_1                 | Driver_MIPI0/Data_To_Csi/U0/lane_align_inst/p_5_out[1]                        |                3 |              8 |
+|  Driver_MIPI0/Data_Read/U0/clock_system_inst/CLK  | Driver_MIPI0/Data_To_Csi/U0/parser_inst/m_axis_tvalid                   | Driver_MIPI0/Driver_Csi_To_Dvp0/valid_neg                                     |                2 |             10 |
+|  Driver_MIPI0/clk_11/inst/clk_out1                |                                                                         | Driver_HDMI0/rgb2dvi/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0 |                4 |             10 |
+|  Driver_MIPI0/clk_11/inst/clk_out1                | Driver_MIPI0/Driver_Csi_To_Dvp0/vdata_0                                 | Driver_MIPI0/Driver_Csi_To_Dvp0/frame_start_pos                               |                7 |             10 |
+|  Driver_MIPI0/clk_11/inst/clk_out1                |                                                                         | Driver_MIPI0/Driver_Csi_To_Dvp0/frame_start_pos                               |                6 |             11 |
+|  Driver_MIPI0/clk_11/inst/clk_out1                | Driver_MIPI0/Driver_Csi_To_Dvp0/vdata_reg[9]_0[0]                       | Driver_MIPI0/Driver_Bayer_To_RGB0/addra[10]_i_1_n_0                           |                2 |             11 |
+|  clk_10/inst/clk_out2                             | Driver_MIPI0/Data_Read/U0/clock_system_inst/wait_cnt                    | Driver_MIPI0/Data_Read/U0/clock_system_inst/dly_gen.wait_cnt[12]_i_1_n_0      |                7 |             13 |
+|  clk_10/inst/clk_out2                             |                                                                         |                                                                               |                7 |             13 |
+|  Driver_MIPI0/clk_11/inst/clk_out1                | Driver_MIPI0/Driver_Csi_To_Dvp0/vdata_reg[9]_1[0]                       | Driver_MIPI0/Driver_Csi_To_Dvp0/unpack_cnt                                    |                4 |             15 |
+|  Driver_MIPI0/Data_Read/U0/clock_system_inst/CLK  | Driver_MIPI0/Data_To_Csi/U0/parser_inst/packet_size[7]                  |                                                                               |                5 |             16 |
+|  Driver_MIPI0/Data_Read/U0/clock_system_inst/CLK  | Driver_MIPI0/Data_To_Csi/U0/parser_inst/transfer_cnt[15]_i_2_n_0        | Driver_MIPI0/Data_To_Csi/U0/parser_inst/transfer_cnt[15]_i_1_n_0              |                4 |             16 |
+| ~Driver_MIPI0/Data_Read/U0/clock_system_inst/CLK  |                                                                         |                                                                               |                4 |             17 |
+|  clk_10/inst/clk_out2                             | Driver_MIPI0/Data_Read/U0/clock_system_inst/dly_gen.acc_val[0]_i_1_n_0  | Driver_MIPI0/Data_Read/U0/clock_system_inst/dly_gen.acc_cnt[19]_i_1_n_0       |                5 |             20 |
+|  clk_10/inst/clk_out2                             | Driver_MIPI0/Data_Read/U0/clock_system_inst/dly_gen.acc_cnt[19]_i_1_n_0 |                                                                               |                7 |             20 |
+|  clk_10/inst/clk_out2                             |                                                                         | Driver_MIPI0/Data_Read/U0/clock_system_inst/dly_gen.acc_cnt[19]_i_1_n_0       |                6 |             20 |
+|  clk_10/inst/clk_out1                             |                                                                         | Diver_OV5647_Init/Enable_reg_0                                                |                9 |             21 |
+|  Driver_MIPI0/clk_11/inst/clk_out1                | Driver_MIPI0/Driver_Bayer_To_RGB0/color_g[9]_i_1_n_0                    |                                                                               |                9 |             24 |
+|  Driver_MIPI0/clk_11/inst/clk_out1                |                                                                         | Driver_HDMI0/rgb2dvi/U0/DataEncoders[0].DataEncoder/SR[0]                     |               13 |             32 |
+|  Driver_MIPI0/Data_Read/U0/clock_system_inst/CLK  | Driver_MIPI0/Data_Read/U0/dl0_rxvalidhs                                 |                                                                               |               12 |             48 |
+|  Driver_MIPI0/Data_Read/U0/clock_system_inst/CLK  |                                                                         |                                                                               |               38 |            121 |
+|  Driver_MIPI0/clk_11/inst/clk_out1                |                                                                         |                                                                               |               66 |            234 |
++---------------------------------------------------+-------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+
+
